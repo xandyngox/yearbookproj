@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yearbook</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .bg {
+        background: white;
+        bottom: 0;
+        left: -50%;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+      }
+      .header {
+        background-color: #4a86e8ff;
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+      }
+      .logoName {
+        color: white;
+        font-weight: BOLD;
+        font-size: 50px;
+        position: fixed;
+        offset: 50px;
+        margin: 0 auto;
+        margin-left: 60px;
+        margin-top: -5px;
+      }
+      .logo {
+        position: fixed;
+        margin: 0 auto;
+        margin-top: 0px;
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="bg"></div>
+    <!-- header -->
+    <div class="header">
+      <img class="logo" src="logo.png" alt="Yearbook.io logo" />
+      <div class="logoName">Yearbook.io</div>
+    </div>
+  </body>
+</html>
