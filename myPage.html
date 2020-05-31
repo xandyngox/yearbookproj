@@ -54,10 +54,26 @@
         right: -50%;
         top: 0;
         z-index: -1;
+        text-align: center;
       }
       .name {
         text-align: center;
         font-size: 30px;
+      }
+      .container {
+        text-align: center;
+      }
+      #editButton {
+        position: fixed;
+        margin-top: 10px;
+        margin-left: -80px;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        font-weight: lighter;
+        color: white;
+        padding: 10px;
+        background-color: #4a86e8ff;
       }
     </style>
   </head>
@@ -68,6 +84,24 @@
     <div class="header">
       <img class="logo" src="logo.png" alt="Yearbook.io logo" />
       <div class="logoName">Yearbook.io</div>
+    </div>
+    <!-- canvas -->
+    <div class="canvas">
+      <div class="name">
+        <input
+          type="text"
+          placeholder="Your name here."
+          style="text-align: center; border: none; font-weight: bold;"
+        />
+      </div>
+      <div class="container">
+        <input
+          class="button"
+          id="editButton"
+          type="button"
+          value="Edit your page."
+        />
+      </div>
     </div>
   </body>
 </html>
