@@ -45,6 +45,20 @@
         margin-top: 0px;
         width: 60px;
       }
+      .canvas {
+        background: white;
+        position: fixed;
+        margin-top: 120px;
+        bottom: 0;
+        left: -50%;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+      }
+      .name {
+        text-align: center;
+        font-size: 30px;
+      }
     </style>
   </head>
   <body>
@@ -54,6 +68,16 @@
     <div class="header">
       <img class="logo" src="logo.png" alt="Yearbook.io logo" />
       <div class="logoName">Yearbook.io</div>
+    </div>
+    <!-- canvas -->
+    <div class="canvas">
+      <div class="name">
+        <input
+          type="text"
+          placeholder="Your name here."
+          style="text-align: center; border: none; font-weight: bold;"
+        />
+      </div>
     </div>
   </body>
 </html>
