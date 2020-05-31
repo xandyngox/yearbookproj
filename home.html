@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <link href="css/style.css" rel="stylesheet">
+
+  
+<body> 
+  <!-- background -->
+  <div class="bg"></div>
+  <!-- header -->
+  <div class="header">
+    <img class="logo" src="logo.png" alt="Yearbook.io logo" />
+    <div class="logoName">Yearbook.io</div>
+  </div>
+    <!--Step 1:Adding HTML-->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto" class="starting">Sign Up</button> 
+  
+    <div id="id01" class="modal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+        <form class="modal-content animate" action="/action_page.php"> 
+            <div class="container"> 
+                <label><b>Name</b></label> 
+                <input type="text" placeholder="Enter Name" name="name" required> 
+
+                <label><b>Email</b></label> 
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label><b>School</b></label> 
+                <input type="text" placeholder="Enter School" name="school" required>
+  
+                <label><b>Password</b></label> 
+                <input type="password" placeholder="Enter Password" name="psw" required> 
+  
+                <label><b>Repeat Password</b></label> 
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required> 
+
+                <div class="clearfix"> 
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+                    <button type="submit" onclick="location.href='MyPage.html"">Sign Up</button> 
+                </div> 
+            </div> 
+        </form> 
+    </div> 
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto" class="startinglog">Log In</button> 
+  
+    <div id="id02" class="modal"> 
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span> 
+        <form class="modal-content animate" action="/action_page.php"> 
+            <div class="container"> 
+                <label><b>Name</b></label> 
+                <input type="text" placeholder="Enter Name" name="name" required> 
+
+                <label><b>Email</b></label> 
+                <input type="text" placeholder="Enter Email" name="email" required>              
+                
+
+                <div class="clearfix"> 
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button> 
+                    <button type="submit" onclick="location.href='MyPage.html;">Log In</button> 
+                </div> 
+            </div> 
+        </form> 
+    </div> 
+  
+    <!--close the modal by just clicking outside of the modal-->
+    <script> 
+        var modal = document.getElementById('id01'); 
+  
+        window.onclick = function(event) { 
+            if (event.target == modal) { 
+                modal.style.display = "none"; 
+            } 
+        } 
+    </script> 
+  
+</body> 
+  
+</html> 
