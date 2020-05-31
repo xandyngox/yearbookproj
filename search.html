@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <form method="get">
+        <select id="schools" style="width:200px">
+            <option value=""></option>
+            <option value="Folsom High School">Folsom High School</option>
+            <option value="Vista del Lago High School">Vista del Lago High School</option>
+            <option value="Cordova High School">Cordova High School</option>
+        </select> 
+
+        <script>
+        function getSchool() {
+            var e=document.getElementById("schools");
+            var hs= e.options[e.selectedIndex].value;
+            if (hs=="Folsom High School"){return "FHS";}
+            else if (hs=="Vista del Lago High School"){return "VDLHS";}
+            else if (hs=="Cordova High School"){return "CHS";}
+        }
+        </script>
+        <input type="text" list=getSchool() id="studentlist" placeholder = "Search your school or classmates" style="width:300px;">
+            <datalist id="FHS">
+                <option value="Andy Ngo" >
+                <option value="Shania Zhou">
+                <option value="Anna Hagiwara">
+                <option value="Wayson Lee">
+                <option value="Spencer Nguyen">
+                <option value="Rita Liu">
+            </datalist>
+
+            <datalist id="VDLHS">
+                <option value="Jero Wang">
+                <option value="Kush Garg">
+                <option value="Bella Nguyen">
+                <option value="Ellie Nguyen">
+                <option value=get(hs)>
+            </datalist>
+
+            <datalist id="CHS">
+                <option value="Bob Ross">
+                <option value="Jane Doe">
+                <option value="John Doe">
+                <option value="Pam Goldman">
+            </datalist>
+
+        <input type="image" id="image" alt"login" src="mag.png" style="width:20px;height:20px">
+        
+        </form>
+  
+</body>
+</html>
