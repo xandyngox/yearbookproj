@@ -1,5 +1,6 @@
 /* 
     /*add full-width input fields*/ 
+    
     input[type=text], 
     input[type=password] { 
         width: 100%; 
@@ -19,6 +20,7 @@
         cursor: pointer; 
         width: 100%; 
         border: 1px solid #000;
+        
     } 
     
     /*set styles for the cancel button*/ 
